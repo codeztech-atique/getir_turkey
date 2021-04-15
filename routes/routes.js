@@ -22,12 +22,12 @@ app.get('/', (req, res) => {
   });
 });
 
-// Get Getir Information
+// Get Getir Information Store
 app.post('/getir', [middleware.validateAPI], (req, res, next) => {
   ppControllers.getAllInformation(req, res);
 });
 
-// Fetch Single Getir
+// Fetch Single Getir Store
 app.get('/getir/:id', (req, res, next) => {
   ppControllers.fetchOne(req, res);
 });
