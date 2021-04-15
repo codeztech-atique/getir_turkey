@@ -37,8 +37,10 @@ MongoDB Cloud <br />
 AWS Lambda <br />
 AWS API Getway <br />
 
+# PROJECT REPOSITORY
+https://github.com/codeztech-atique/getir_turkey
 # API URL
-
+https://cmtxcoybtj.execute-api.ap-south-1.amazonaws.com/production/
 # API Documention URL
-
+https://documenter.getpostman.com/view/2063706/TzJrBKAb
 

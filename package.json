@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=development jest test.js --detectOpenHandles",
+    "test": "NODE_ENV=development jest test.js --testEnvironment=node --watchAll --detectOpenHandles --forceExit",
     "start": "nodemon local.js"
   },
   "repository": {
