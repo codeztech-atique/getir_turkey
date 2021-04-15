@@ -1,0 +1,20 @@
+{
+    "serverMongodb": {
+      "url": "mongodb+srv://",
+      "username":"challengeUser",
+      "password":"WUMglwNBaydH8Yvu",
+      "serverUrl":"challenge-xzwqd.mongodb.net",
+      "port":"27017",
+      "databaseName":"getir-case-study"
+    },
+    "localMongodb": {
+      "url": "mongodb://",
+      "username":"",
+      "password":"",
+      "serverUrl":"localhost",
+      "port":"27017",
+      "databaseName":"getir case-study"
+    },
+    "port": 4000
+  }
+  
