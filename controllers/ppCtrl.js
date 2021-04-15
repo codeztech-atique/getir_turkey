@@ -71,17 +71,18 @@ exports.getAllInformation = (req, res, next) => {
 
 exports.fetchOne = (req, res, next) => {
   // console.log(chalk.bgYellowBright("---------------- UrlShorter Information Submitted ----------------"));
-  ttContent.find({id: req.params.id}, async( err, resp) => {
+  ttContent.find({key: req.params.id}, async( err, resp) => {
     if (Object.keys(resp).length) {
       var filterObj = [];
       resp.forEach((e) => {
         filterObj.push({
-          id: e.id,
-          name: e.name,
-          mobile: e.mobile,
+          key: e.key,
+          count: e.count,
+          createdAt: e.createdAt,
         });
       });
       res.status(200).send({
+        code: 0,
         message: 'Success',
         data: filterObj
       });

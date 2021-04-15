@@ -23,13 +23,12 @@ app.get('/', (req, res) => {
 });
 
 // Get Getir Information
-app.post('/getir', [], (req, res, next) => {
+app.post('/getir', [middleware.validateAPI], (req, res, next) => {
   ppControllers.getAllInformation(req, res);
 });
 
-
 // Fetch Single Getir
-app.get('/:id', [], (req, res, next) => {
+app.get('/getir/:id', (req, res, next) => {
   ppControllers.fetchOne(req, res);
 });
 
